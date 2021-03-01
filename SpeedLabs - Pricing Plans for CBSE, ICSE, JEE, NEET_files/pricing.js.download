@@ -362,8 +362,8 @@ let pricingAry = [
           },
           {
             validity: "May, 2023",
-            packageSelect: "11,000",
-            packagePremium: "33,000",
+            packageSelect: "13,000",
+            packagePremium: "39,000",
           },
         ],
       },
