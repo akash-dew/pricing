@@ -1,0 +1,518 @@
+// All Courses List
+let pricingAry = [
+  {
+    board: "Board",
+    readOnly: true
+  },
+  {
+    board: "CBSE",
+    classes: [
+      {
+        class: "Select Class",
+        readOnly: true
+      },
+      {
+        class: "6",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+      {
+        class: "7",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+      {
+        class: "8",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+      {
+        class: "9 + NTSE",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "10 + NTSE",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "11",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "12",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    board: "ICSE",
+    classes: [
+      {
+        class: "Select Class",
+        readOnly: true
+      },
+      {
+        class: "6",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+      {
+        class: "7",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+      {
+        class: "8",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "6,000",
+            packagePremium: "18,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "10,000",
+            packagePremium: "30,000",
+          },
+        ],
+      },
+
+      {
+        class: "9",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "10",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    board: "ISC",
+    classes: [
+      {
+        class: "Select Class",
+        readOnly: true
+      },
+      {
+        class: "11",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "12",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "7,000",
+            packagePremium: "21,000",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    board: "Exams",
+    readOnly: true
+  },
+  {
+    board: "JEE",
+    classes: [
+      {
+        class: "Select Class",
+        readOnly: true
+      },
+      {
+        class: "11",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "8,000",
+            packagePremium: "24,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "12",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "8,000",
+            packagePremium: "24,000",
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    board: "NEET",
+    classes: [
+      {
+        class: "Select Class",
+        readOnly: true
+      },
+      {
+        class: "11",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "8,000",
+            packagePremium: "24,000",
+          },
+          {
+            validity: "May, 2023",
+            packageSelect: "11,000",
+            packagePremium: "33,000",
+          },
+        ],
+      },
+      {
+        class: "12",
+        packages: [
+          {
+            validity: "Select Exam Year",
+            readOnly: true
+          },
+          {
+            validity: "May, 2022",
+            packageSelect: "8,000",
+            packagePremium: "24,000",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+let dummyBoard = document.getElementById("dummyBoard");
+let dummyBoardClasses = document.getElementById("dummyBoardClasses");
+let dummyYears = document.getElementById("dummyYears");
+
+let currentBoardInd = 1;
+let currentClassInd = 1;
+let currentYearInd = 1;
+
+let stPrice = document.querySelector('#standardPrice span');
+let prPrice = document.querySelector('#premiumPrice span');
+
+function createBoarda() {
+  dummyBoard.innerText = "";
+  pricingAry.forEach((item, index) => {
+    let opt = document.createElement("option");
+    opt.innerText = item.board;
+    opt.setAttribute("data-index", index);
+
+    if(item.readOnly){
+      opt.setAttribute("disabled", 'disabled');
+    }
+
+    dummyBoard.appendChild(opt);
+  });
+  currentBoardInd = 1;
+  createClass(currentBoardInd);
+ 
+}
+
+
+
+function createClass(classInd) {
+  dummyBoardClasses.innerText = "";
+  
+
+  pricingAry[classInd].classes.forEach((item, index) => {
+    let opt = document.createElement("option");
+    opt.innerText = 'Class ' + item.class;
+    opt.setAttribute("data-index", index);
+    if(item.readOnly){
+      opt.setAttribute("disabled", 'disabled');
+    }
+    dummyBoardClasses.appendChild(opt);
+  });
+  currentClassInd = 1;
+  currentYearInd = 1;
+  createYears(currentClassInd);
+
+}
+
+function createYears(classInd) {
+  dummyYears.innerText = "";
+ 
+
+  pricingAry[currentBoardInd].classes[classInd].packages.forEach((item, index) => {
+    let opt = document.createElement("option");
+    opt.innerText = item.validity;
+    opt.setAttribute("data-index", index);
+    if(item.readOnly){
+      opt.setAttribute("disabled", 'disabled');
+    }
+    dummyYears.appendChild(opt);
+  });
+}
+
+// dummyBoard.addEventListener("change", () => {
+  
+// });
+ 
+$(dummyBoard).on('change', function(){
+  currentBoardInd = dummyBoard.selectedIndex;
+  createClass(currentBoardInd);
+  updatePrice();
+})
+
+$(dummyBoardClasses).on('change', function(){
+  currentClassInd = dummyBoardClasses.selectedIndex;
+  createYears(dummyBoardClasses.selectedIndex);
+  updatePrice();
+});
+
+$(dummyYears).on('change', function(){
+  currentYearInd = dummyYears.selectedIndex;
+  updatePrice();
+});
+
+
+function updatePrice(){
+
+  if($('.SumoSelect').length > 0){
+    $('.custSelect')[0].sumo.reload();
+    $('.custSelect')[1].sumo.reload();
+    $('.custSelect')[2].sumo.reload();
+  }
+
+
+  console.log('Board '+ currentBoardInd + '==== Class '+ currentClassInd + '==== Year '+ currentYearInd)
+
+  let stPriceVal = setValues('st')
+  let prPriceVal = setValues('pr')
+
+  stPrice.textContent = stPriceVal;
+  prPrice.textContent = prPriceVal;
+
+  $('.pricing-section .card-body .grade').html( `<span>${pricingAry[currentBoardInd].board}</span>, Class ${pricingAry[currentBoardInd].classes[currentClassInd].class}`)
+
+}
+
+
+function setValues(pack){
+  
+  if(!pricingAry[currentBoardInd].classes[currentClassInd]){   
+    currentClassInd = 1
+  }
+
+  if(!pricingAry[currentBoardInd].classes[currentClassInd].packages[currentYearInd]){
+    currentYearInd = 1
+  }
+
+  if(pack == 'st'){
+    return  pricingAry[currentBoardInd].classes[currentClassInd].packages[currentYearInd].packageSelect
+  }else{
+    return pricingAry[currentBoardInd].classes[currentClassInd].packages[currentYearInd].packagePremium
+  }
+
+
+}
+
+createBoarda();
+updatePrice()
+ 
